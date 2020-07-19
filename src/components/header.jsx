@@ -2,39 +2,10 @@ import React from 'react';
 
 function Header() {
   return (
-    <header className='header'>
+    <header className='header fixed'>
       <div className='container'>
         <div className='header__row'>
-          <div className='header__logo logo'>
-            <a href='index.html' className='logo__link'>
-              <img src={logo} alt='logo' />
-            </a>
-          </div>
-          <nav className='header__nav'>
-            <ul className='header__menu menu'>
-              <li className="menu__items">
-                <a className="menu__links" href='#products'>Products</a>
-              </li>
-              <li className="menu__items">
-                <a className="menu__links" href='#about'>About</a>
-              </li>
-              <li className="menu__items">
-                <a className="menu__links" href='#company'>Our Company</a>
-              </li>
-              <li className="menu__items">
-                <a className="menu__links" href='#rewards'>Tasty Rewards</a>
-              </li>
-              <li className="menu__items">
-                <a className="menu__links" href='#buy'>Where to buy</a>
-              </li>
-            </ul>
-          </nav>
-          <div className='header__cart cart'>
-            <button className="cart__btn">
-              <img className="cart__img" src={cart} alt='' />
-              <span className="cart__items">2</span>
-            </button>
-          </div>
+          
         </div>
       </div>
     </header>

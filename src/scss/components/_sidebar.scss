@@ -1,0 +1,28 @@
+.sidebar {
+	width: vw(250);
+	left: 0;
+	top: 0;
+	bottom: 0;
+	&__logo {
+		padding: vw(20) vw(25);
+		img {
+			height: vw(40);
+		}
+	}
+	&__nav {
+		padding: vw(10) vw(30);
+	}
+}
+.menu {
+	&__items {
+		margin-bottom: vw(10);
+	}
+	&__links {
+		font-size: vw(20);
+		font-weight: normal;
+		color:$black;
+	}
+	&__icons {
+		margin-right: vw(10);
+	}
+}

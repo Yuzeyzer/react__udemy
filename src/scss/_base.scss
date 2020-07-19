@@ -1,6 +1,16 @@
+body {
+	margin: 0;
+	padding: 0;
+}
 .container {
 	max-width: vw(1600);
 	margin: 0 auto;
+}
+.flex {
+	display: flex;
+}
+.fixed {
+	position: fixed;
 }
 span {
 	display: inline-block;
@@ -9,7 +19,11 @@ a {
 	display: inline-block;
 	text-decoration: none;
 }
+ul,
+ol,
 li {
+	padding: 0;
+	margin: 0;
 	list-style-type: none;
 }
 img {
