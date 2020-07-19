@@ -9,11 +9,12 @@ function Sidebar() {
     { menu__label: 'My Courses', path: 'my-courses', icon: 'icon-briefcase' },
   ];
 
-	const [menuItemsActive, setMenuItemsActive] = useState(0);
-	
-	const setActive = index => {
+  const [menuItemsActive, setMenuItemsActive] = useState(0);
+
+  const setActive = (index) => {
 		setMenuItemsActive(index);
-	}
+		console.log(index)
+  };
 
   return (
     <div className='sidebar fixed'>
@@ -26,9 +27,12 @@ function Sidebar() {
         <ul className='sidebar__menu menu'>
           {menuItems &&
             menuItems.map((item, index) => (
-              <li className={index === 0 ? 'menu__items active' : 'menu__items'} onClick={() => setActive(index)} key={item.menu__label}>
-                <a className='menu__links' href={item.path}>
-                  <i className={'menu__icons' + ' ' + item.icon}></i>
+              <li
+                className={menuItemsActive === index ? 'menu__items active' : 'menu__items'}
+                onClick={() => setActive(index)}
+                key={item.menu__label}>
+                <a className='menu__links' href='#2'>
+                  <i className={'menu__icons ' + item.icon}></i>
                   <span className='menu__label'>{item.menu__label}</span>
                 </a>
               </li>
