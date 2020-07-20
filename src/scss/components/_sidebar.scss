@@ -10,17 +10,32 @@
 		}
 	}
 	&__nav {
-		padding: vw(10) vw(30);
+		padding: vw(50) vw(30);
 	}
 }
 .menu {
 	&__items {
-		margin-bottom: vw(10);
+		margin-bottom: vw(20);
+		line-height: 1;
 	}
 	&__links {
 		font-size: vw(20);
 		font-weight: normal;
 		color:$black;
+		padding-left: vw(20);
+		&.active {
+			position: relative;
+			color: $red;
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: vw(-10);
+				height: vw(35);
+				width: 2px;
+				background-color: $red;
+			}
+		}
 	}
 	&__icons {
 		margin-right: vw(10);

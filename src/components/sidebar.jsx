@@ -13,7 +13,6 @@ function Sidebar() {
 
   const setActive = (index) => {
 		setMenuItemsActive(index);
-		console.log(index)
   };
 
   return (
@@ -28,10 +27,10 @@ function Sidebar() {
           {menuItems &&
             menuItems.map((item, index) => (
               <li
-                className={menuItemsActive === index ? 'menu__items active' : 'menu__items'}
+                className={'menu__items'}
                 onClick={() => setActive(index)}
                 key={item.menu__label}>
-                <a className='menu__links' href='#2'>
+                <a className={`menu__links ${menuItemsActive === index ? 'active' : ''}`} href={item.path}>
                   <i className={'menu__icons ' + item.icon}></i>
                   <span className='menu__label'>{item.menu__label}</span>
                 </a>

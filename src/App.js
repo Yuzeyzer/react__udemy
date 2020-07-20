@@ -5,7 +5,7 @@ import './scss/index.scss';
 
 function App() {
   return (
-    <div className="flex">
+    <div>
       <Sidebar />
       <Header />
     </div>
