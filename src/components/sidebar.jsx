@@ -19,9 +19,9 @@ function Sidebar() {
   return (
     <div className='sidebar'>
       <div className='sidebar__logo logo'>
-        <a href='index.html' className='logo__link'>
+        <Link to='index.html' className='logo__link'>
           <img src={logo} alt='logo' />
-        </a>
+        </Link>
       </div>
       <div className='sidebar__nav'>
         <ul className='sidebar__menu menu'>
@@ -37,6 +37,13 @@ function Sidebar() {
               </li>
             ))}
         </ul>
+      </div>
+      <div className='sidebar__updated updated'>
+        <i className='updated__icon icon-lamp-bright icon'></i>
+        <div className='updated__info'>
+          <h3 className='updated__title'>Updated Course</h3>
+          <cite className='updated__author'>by skarlatus</cite>
+        </div>
       </div>
     </div>
   );

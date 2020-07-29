@@ -11,3 +11,13 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root'),
 );
+
+// const input = (arr) => {
+//   return arr.reduce((acc, rec) => {
+//     let length = rec.length;
+//     console.log(rec);
+//     return {...acc, [rec]: length};
+//   }, {});
+// };
+// input(['aaaaa', 'bbb', 'c']);
+// console.log(input(['aaaaa', 'bbb', 'c']));

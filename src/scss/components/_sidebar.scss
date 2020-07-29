@@ -10,20 +10,25 @@
 		}
 	}
 	&__nav {
-		margin-top: vw(100);
+		margin-top: vw(50);
 		background-color: #F8F9F8;
 		border-radius: vw(15);
 		padding: vw(50) vw(30);
+	}
+	&__updated {
+		padding: vw(20) vw(30);
+		margin-top: vw(25);
+		background-color: #F8F9F8;
+		border-radius: vw(15);
 	}
 }
 
 .menu {
 	&__items {
-		margin-bottom: vw(30);
+		margin-bottom: vw(20);
 		line-height: 1;
 	}
 	&__links {
-		font-family: 'Poppins', sans-serif;
 		font-size: vw(16);
 		font-weight: 500;
 		color:#C2C4C4;
@@ -47,5 +52,34 @@
 		margin-right: vw(15);
 		font-weight: 500;
 		font-size: vw(18);
+	}
+}
+.icon {
+	margin-right: vw(15);
+	font-weight: 500;
+	font-size: vw(18);
+}
+.updated {
+	display: flex;
+	align-items: center;
+	&__icon {
+		padding: vw(10);
+		font-size: vw(18);
+		color: #fff;
+		background-color: #9013FE;
+		border-radius: vw(15);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__title {
+		font-size: vw(15);
+		font-weight: 700;
+		color: #3F4347;
+		margin: 0 0 vw(5);
+	}
+	&__author {
+		font-size: vw(13);
+		color:#C2C4C4;
 	}
 }
