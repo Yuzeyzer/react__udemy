@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/svg/logo.svg';
 
 function Sidebar() {
@@ -12,7 +13,7 @@ function Sidebar() {
   const [menuItemsActive, setMenuItemsActive] = useState(0);
 
   const setActive = (index) => {
-		setMenuItemsActive(index);
+    setMenuItemsActive(index);
   };
 
   return (
@@ -26,14 +27,13 @@ function Sidebar() {
         <ul className='sidebar__menu menu'>
           {menuItems &&
             menuItems.map((item, index) => (
-              <li
-                className={'menu__items'}
-                onClick={() => setActive(index)}
-                key={item.menu__label}>
-                <a className={`menu__links ${menuItemsActive === index ? 'active' : ''}`} href={item.path}>
+              <li className={'menu__items'} onClick={() => setActive(index)} key={item.menu__label}>
+                <Link
+                  className={`menu__links ${menuItemsActive === index ? 'active' : ''}`}
+                  to={item.path}>
                   <i className={'menu__icons ' + item.icon}></i>
                   <span className='menu__label'>{item.menu__label}</span>
-                </a>
+                </Link>
               </li>
             ))}
         </ul>
