@@ -5,7 +5,7 @@ import logo from '../assets/svg/logo.svg';
 function Sidebar() {
   const menuItems = [
     { menu__label: 'Home', path: '/', icon: 'icon-home' },
-    { menu__label: 'Discover', path: 'dicover', icon: 'icon-ul' },
+    { menu__label: 'Discover', path: 'dicover', icon: 'icon-search' },
     { menu__label: 'Categories', path: 'categories', icon: 'icon-tag' },
     { menu__label: 'My Courses', path: 'my-courses', icon: 'icon-briefcase' },
   ];
