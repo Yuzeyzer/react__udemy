@@ -10,18 +10,23 @@
 		}
 	}
 	&__nav {
+		margin-top: vw(100);
+		background-color: #F8F9F8;
+		border-radius: vw(15);
 		padding: vw(50) vw(30);
 	}
 }
+
 .menu {
 	&__items {
-		margin-bottom: vw(20);
+		margin-bottom: vw(30);
 		line-height: 1;
 	}
 	&__links {
-		font-size: vw(20);
-		font-weight: normal;
-		color:$black;
+		font-family: 'Poppins', sans-serif;
+		font-size: vw(16);
+		font-weight: 500;
+		color:#C2C4C4;
 		padding-left: vw(20);
 		&.active {
 			position: relative;
@@ -29,15 +34,16 @@
 			&::before {
 				content: '';
 				position: absolute;
-				left: 0;
-				top: vw(-10);
-				height: vw(35);
-				width: 2px;
+				left: vw(-5);
+				top: vw(5);
+				height: vw(10);
+				width: vw(10);
 				background-color: $red;
+				border-radius: 50%;
 			}
 		}
 	}
 	&__icons {
-		margin-right: vw(10);
+		margin-right: vw(15);
 	}
 }

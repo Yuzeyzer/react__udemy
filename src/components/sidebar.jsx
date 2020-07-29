@@ -17,7 +17,7 @@ function Sidebar() {
   };
 
   return (
-    <div className='sidebar fixed'>
+    <div className='sidebar'>
       <div className='sidebar__logo logo'>
         <a href='index.html' className='logo__link'>
           <img src={logo} alt='logo' />
