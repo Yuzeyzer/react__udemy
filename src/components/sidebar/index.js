@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import logo from '../../assets/svg/logo.svg';
+import Logo from './logo';
 import Nav from './nav';
 import UpdatedCourse from './updatedCourse';
 import Stats from './stats';
@@ -9,11 +8,7 @@ import Stats from './stats';
 const Index = () => {
   return (
     <div className='sidebar'>
-      <div className='sidebar__logo logo'>
-        <Link to='index.html' className='logo__link'>
-          <img src={logo} alt='logo' />
-        </Link>
-      </div>
+      <Logo />
       <Nav />
       <UpdatedCourse />
       <Stats />
