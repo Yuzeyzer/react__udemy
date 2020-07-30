@@ -1,9 +1,6 @@
 .sidebar {
 	width: vw(250);
-	left: 0;
-	top: 0;
-	bottom: 0;
-	border-right: vw(1) solid rgba(0,0,0,0.1);
+	border-right: vw(1) solid rgba(0, 0, 0, 0.1);
 	padding-right: vw(45);
 	min-height: 100vh;
 	&__logo {
@@ -14,15 +11,13 @@
 	}
 	&__nav {
 		margin-top: vw(25);
-		background-color: #F8F9F8;
+		background-color: #f8f9f8;
 		border-radius: vw(15);
-		padding: vw(45) vw(30) vw(25) vw(20);
+		padding: vw(35) vw(30) vw(15) vw(20);
 	}
 	&__updated {
 		padding: vw(20) vw(30);
-		margin-top: vw(25);
-		background-color: #F8F9F8;
-		border-radius: vw(15);
+		margin: vw(25) 0;
 	}
 }
 
@@ -35,13 +30,13 @@
 		display: block;
 		font-size: vw(16);
 		font-weight: 500;
-		color:#C2C4C4;
+		color: #c2c4c4;
 		padding-left: vw(20);
 		&.active {
 			position: relative;
 			color: $red;
 			&::before {
-				content: '';
+				content: "";
 				position: absolute;
 				right: vw(25);
 				top: vw(8);
@@ -66,11 +61,13 @@
 .updated {
 	display: flex;
 	align-items: center;
+	background-color: #f8f9f8;
+	border-radius: vw(15);
 	&__icon {
 		padding: vw(12);
 		font-size: vw(18);
 		color: #fff;
-		background-color: #9013FE;
+		background-color: #9013fe;
 		border-radius: vw(15);
 		display: flex;
 		align-items: center;
@@ -79,32 +76,57 @@
 	&__title {
 		font-size: vw(15);
 		font-weight: 700;
-		color: #3F4347;
-		margin: 0 0 vw(5);
+		color: #3f4347;
+		margin: 0 0 0;
 	}
 	&__author {
 		font-size: vw(13);
-		color:#C2C4C4;
+		color: #c2c4c4;
 	}
 }
 
 .stats {
-	margin-top: vw(25);
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0 vw(-10);
 	&__points {
-		background-color: #F8F9F8;
+		box-sizing: border-box;
+		padding: 0 vw(10);
+	}
+	&__item {
+		background-color: #f8f9f8;
+		border-radius: vw(15);
+		padding: vw(20);
 	}
 	&__number {
 		font-size: vw(15);
 		font-weight: 700;
-		color: #333;
+		color: $black;
 		margin: vw(30) 0 vw(3);
 	}
+	&__author {
+		margin-top: vw(20);
+		.stats__item {
+			display:flex;
+			align-items: center;
+		}
+	}
+	&__avatar {
+		background-color: $red;
+		border-radius: vw(15);
+		max-width: vw(40);
+		margin-right: vw(10);
+	}
 	&__name {
+		margin: 0;
 		font-size: vw(15);
 		font-weight: 700;
-		color: #333;
+		color: $black;
+	}
+	&__nickname {
+		font-size: vw(13);
+		font-weight: 500;
+		color: #777;
 	}
 	&__type {
 		font-size: vw(13);
