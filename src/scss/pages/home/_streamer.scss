@@ -1,0 +1,19 @@
+.streamers {
+	&__title {
+		font-weight: 600;
+	}
+	&__more {
+		max-height: vw(50);
+		display: flex;
+		align-items: center;
+		font-size: vw(38);
+		color: $lightgray;
+	}
+	&__img {
+		margin-right: vw(15);
+		border-radius: vw(15);
+	}
+}
+.font-light {
+	font-weight: 400;
+}
