@@ -20,7 +20,6 @@
 		margin: vw(25) 0;
 	}
 }
-
 .menu {
 	&__items {
 		margin-bottom: vw(20);
@@ -84,7 +83,6 @@
 		color: #c2c4c4;
 	}
 }
-
 .stats {
 	display: flex;
 	flex-wrap: wrap;
@@ -126,11 +124,11 @@
 	&__nickname {
 		font-size: vw(13);
 		font-weight: 500;
-		color: #777;
+		color: $lightgray;
 	}
 	&__type {
 		font-size: vw(13);
-		color: #777;
+		color: $lightgray;
 		font-weight: 500;
 	}
 }

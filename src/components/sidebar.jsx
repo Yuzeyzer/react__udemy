@@ -61,7 +61,7 @@ function Sidebar() {
             <i className='icon-power icon pink'></i>
             <div className='stats__info'>
               <h3 className='stats__number'>45.3%</h3>
-              <cite className='stats__type'>points</cite>
+              <span className='stats__type'>points</span>
             </div>
           </div>
         </div>
