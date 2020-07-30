@@ -23,7 +23,7 @@ function Sidebar() {
           <img src={logo} alt='logo' />
         </Link>
       </div>
-      <div className='sidebar__nav'>
+      <div className='sidebar__nav nav'>
         <ul className='sidebar__menu menu'>
           {menuItems &&
             menuItems.map((item, index) => (
@@ -42,7 +42,30 @@ function Sidebar() {
         <i className='updated__icon icon-lamp-bright icon'></i>
         <div className='updated__info'>
           <h3 className='updated__title'>Updated Course</h3>
-          <cite className='updated__author'>by skarlatus</cite>
+          <span className='updated__author'>by skarlatus</span>
+        </div>
+      </div>
+      <div className='sidebar__stats stats'>
+        <div className='stats__points col-6'>
+          <i className='icon-shield icon'></i>
+          <div className='stats__info'>
+            <h3 className='stats__number'>1800</h3>
+            <span className='stats__type'>points</span>
+          </div>
+        </div>
+        <div className='stats__points col-6'>
+          <i className='icon-shield icon'></i>
+          <div className='stats__info'>
+            <h3 className='stats__number'>45.3%</h3>
+            <cite className='stats__type'>points</cite>
+          </div>
+        </div>
+        <div className='stats__points col-12'>
+          <i className='icon-shield icon'></i>
+          <div className='stats__info'>
+            <h3 className='stats__name'>Alex Dicon</h3>
+            <span className='stats__nickname'>@alexlearns</span>
+          </div>
         </div>
       </div>
     </div>

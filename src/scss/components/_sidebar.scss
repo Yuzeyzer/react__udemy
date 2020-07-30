@@ -3,6 +3,9 @@
 	left: 0;
 	top: 0;
 	bottom: 0;
+	border-right: vw(1) solid rgba(0,0,0,0.1);
+	padding-right: vw(45);
+	min-height: 100vh;
 	&__logo {
 		padding: vw(20) vw(25);
 		img {
@@ -10,10 +13,10 @@
 		}
 	}
 	&__nav {
-		margin-top: vw(50);
+		margin-top: vw(25);
 		background-color: #F8F9F8;
 		border-radius: vw(15);
-		padding: vw(50) vw(30);
+		padding: vw(45) vw(30) vw(25) vw(20);
 	}
 	&__updated {
 		padding: vw(20) vw(30);
@@ -29,6 +32,7 @@
 		line-height: 1;
 	}
 	&__links {
+		display: block;
 		font-size: vw(16);
 		font-weight: 500;
 		color:#C2C4C4;
@@ -39,12 +43,12 @@
 			&::before {
 				content: '';
 				position: absolute;
-				left: vw(-5);
-				top: vw(5);
+				right: vw(25);
+				top: vw(8);
 				height: vw(10);
 				width: vw(10);
 				background-color: $red;
-				border-radius: 50%;
+				border-radius: vw(15);
 			}
 		}
 	}
@@ -63,7 +67,7 @@
 	display: flex;
 	align-items: center;
 	&__icon {
-		padding: vw(10);
+		padding: vw(12);
 		font-size: vw(18);
 		color: #fff;
 		background-color: #9013FE;
@@ -81,5 +85,30 @@
 	&__author {
 		font-size: vw(13);
 		color:#C2C4C4;
+	}
+}
+
+.stats {
+	margin-top: vw(25);
+	display: flex;
+	flex-wrap: wrap;
+	&__points {
+		background-color: #F8F9F8;
+	}
+	&__number {
+		font-size: vw(15);
+		font-weight: 700;
+		color: #333;
+		margin: vw(30) 0 vw(3);
+	}
+	&__name {
+		font-size: vw(15);
+		font-weight: 700;
+		color: #333;
+	}
+	&__type {
+		font-size: vw(13);
+		color: #777;
+		font-weight: 500;
 	}
 }
