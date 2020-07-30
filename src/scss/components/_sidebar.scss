@@ -76,7 +76,8 @@
 		font-size: vw(15);
 		font-weight: 700;
 		color: $black;
-		margin: 0 0 0;
+		margin: 0;
+		white-space: nowrap;
 	}
 	&__author {
 		font-size: vw(13);
