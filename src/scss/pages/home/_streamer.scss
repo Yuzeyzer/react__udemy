@@ -9,9 +9,13 @@
 		font-size: vw(38);
 		color: $lightgray;
 	}
+	&__link {
+		margin-right: vw(11);
+		max-width: vw(40);
+	}
 	&__img {
-		margin-right: vw(15);
 		border-radius: vw(15);
+		border: 2px solid $red;
 	}
 }
 .font-light {
